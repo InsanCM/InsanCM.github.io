@@ -1,10 +1,17 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: Nunito, sans-serif;
+}
+:root {
+  --blue: #4351ff;
+  --bluee: #1325a5;
 }
 #header {
   background-color: white;
@@ -15,13 +22,21 @@ body {
   align-items: center;
   font-size: larger;
   font-weight: bold;
-  box-shadow: 0 3px 20px 0px rgb(146, 137, 137);
+  box-shadow: 0 2px 15px 0px rgb(179, 171, 171);
   position: fixed;
   width: 100%;
 }
 #header-nav li {
   display: inline;
   margin-right: 40px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--blue);
 }
 /* main */
 .welcoming-section {
@@ -40,7 +55,7 @@ body {
 .welcoming-text h2 {
   font-size: 150%;
   line-height: 0;
-  color: rgb(141, 155, 233);
+  color: var(--blue);
 }
 .welcoming-img img {
   height: 60vh;
@@ -50,17 +65,200 @@ body {
   margin: 10px 20px 10px 0;
 }
 .warna {
-  color: rgb(73, 95, 218);
+  color: var(--bluee);
 }
 .welcoming-text button {
   width: 160px;
   padding: 11px;
   border-radius: 3px;
   font-weight: bold;
-  background-color: linear-gradient(rgb(73, 95, 218), rgb(141, 155, 233));
+  background: linear-gradient(to right, var(--bluee), var(--blue));
+  color: white;
 }
 .welcoming-text i {
   margin-left: 10px;
   width: 20px;
   font-weight: bold;
+}
+/* about me */
+.about {
+  text-align: center;
+  height: 100vh;
+}
+.about h2 {
+  font-size: 300%;
+  line-height: 0px;
+}
+.about h4 {
+  font-size: 120%;
+}
+.garis {
+  max-width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: -15px;
+  background-color: var(--blue);
+}
+.kontainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 10px;
+}
+.kontainer img {
+  max-width: 35%;
+  object-fit: cover;
+}
+.about_text {
+  max-width: 40%;
+}
+.about_text h3 {
+  font-size: 200%;
+  line-height: 0px;
+}
+.about_text p {
+  font-size: larger;
+}
+.kontainer2 {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.garis-2 {
+  background-color: gray;
+  height: 130px;
+  width: 1px;
+}
+/* Project */
+.project {
+  text-align: center;
+}
+.project h2 {
+  font-size: 300%;
+  line-height: 0px;
+}
+.project h4 {
+  font-size: 120%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  margin: 0 5%;
+}
+.grid img {
+  max-width: 100%;
+  object-fit: fill;
+  height: 70%;
+  border-radius: 10px;
+}
+.card {
+  padding: 6%;
+  margin: 5%;
+  border: 3px solid var(--bluee);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px gray;
+  max-width: 100%;
+  transition: 0.3s;
+}
+.card:hover {
+  border: 3px solid white;
+  padding: 3%;
+}
+.card p {
+  font-size: 120%;
+}
+/* Skills */
+.skills {
+  padding: 5% 100px;
+  height: 100vh;
+}
+.skills h2 {
+  font-size: 300%;
+  line-height: 5px;
+}
+.kontainer-skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+.card-2 {
+  border: 2px solid var(--blue);
+  flex-basis: 30%;
+  text-align: center;
+  font-size: 120%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgb(190, 180, 180);
+  transition: 0.7s;
+}
+.card-2:hover {
+  background-color: rgba(67, 81, 255, 0.7);
+}
+.card-2 img {
+  max-width: 100%;
+  height: 10%;
+}
+.js p {
+  padding-top: 30px;
+}
+/* kontak */
+.contact {
+  padding: 7%;
+}
+.contact-h2 {
+  font-size: 300%;
+  line-height: 5px;
+}
+.kontainer-contact {
+  padding: 40px;
+  display: flex;
+  height: 470px;
+  margin-top: 40px;
+  background-color: var(--bluee);
+  border-radius: 20px;
+  justify-content: space-around;
+  color: white;
+}
+.kontainer-contact h2 {
+  font-size: 300%;
+  line-height: 0px;
+}
+.contact-text {
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+.contact-form {
+  text-align: right;
+  width: 50%;
+}
+.contact-form input {
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+}
+label {
+  font-size: large;
+  margin-right: 15px;
+}
+.contact-form button {
+  background-color: white;
+  margin-top: 15px;
+  width: 100px;
+  padding: 7px;
+  border-radius: 10px;
+  color: var(--blue);
+  font-weight: bold;
+}
+#putih {
+  background-color: white;
+  margin-top: 3px;
+  max-width: 120px;
+}
+/* footer */
+footer {
+  text-align: center;
 }
