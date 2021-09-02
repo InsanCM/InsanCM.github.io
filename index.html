@@ -16,11 +16,11 @@
       <div id="header-nav">
         <nav>
           <ul>
-            <li><a href="kalkulator/kalkulator.html">Home</a></li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Skilss</li>
-            <li>Contact</li>
+            <li><a href="#content">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -37,116 +37,114 @@
             <a href="instagram.com"><img src="assets/instagram-logo-48.png" /></a>
             <a href="email.com"><img src="assets/mail-send-regular-48.png" /></a>
             <a href="linkedin.com"><img src="assets/linkedin-logo-48.png" /></a>
-            <a href="github.com"><img src="assets/github-logo-48.png" /></a>
+            <a href="https://github.com/Umronn"><img src="assets/github-logo-48.png" /></a>
             <br />
-            <button>Download CV <i class="bx bx-send"></i></button>
+            <button class="linear">Download CV <i class="bx bx-send"></i></button>
           </section>
         </article>
-        <article>
-          <h2>About Me</h2>
+        <!-- About -->
+        <article class="about" id="about">
+          <h2>About <span class="warna">Me</span></h2>
           <h4>My Introduction</h4>
-          <div class="garis"></div>
-          <div>
-            <section>
+          <hr class="garis" />
+          <div class="kontainer">
+            <section class="about_text">
               <h3>Wanna Know Me?</h3>
               <hr />
-              <p>Hi, I am Umron. I'm a Beginner Web Developer. I'm 18 years old. I'm College Student. I live in Indonesia. I’m interested in Web Development. Knowledge of HTML AND CSS. My JavaScript is Low.</p>
-              <div>
+              <p>Hi, I am Umron. I'm a Beginner Web Developer. I'm 18 years old. I'm College Student. I live in Indonesia. I’m interested in Web Development. Knowledge of HTML and CSS. My JavaScript is Low.</p>
+              <div class="kontainer2">
                 <section>
-                  <p>2+</p>
+                  <p><b>2+</b></p>
                   <p>Months</p>
                   <p>Experience</p>
                 </section>
-                <section class="garis-2"></section>
+                <div class="garis-2"></div>
                 <section>
-                  <p>6+</p>
+                  <p><b>6+</b></p>
                   <p>Completed</p>
                   <p>Projects</p>
                 </section>
               </div>
             </section>
-            <img src="assets/man_working.png" alt="picture" />
+            <img src="assets/reshot-illustration-freelancer-working-from-home-A7PK3R5BNE.png" alt="picture" />
           </div>
         </article>
-        <article>
-          <h2>My Awesome Projects</h2>
+        <!-- About -->
+        <article class="project" id="project">
+          <h2>My <span class="warna">Awesome</span> Projects</h2>
           <h4>Projects +</h4>
-          <div class="garis"></div>
-          <div>
-            <section>
+          <hr class="garis" />
+          <div class="grid">
+            <a href="kalkulator/kalkulator.html"
+            <section class="card">
               <img src="assets/Screenshot (222).png" />
               <p>Hitung Nilai UTBK</p>
             </section>
-            <section>
-              <img src="assets/Screenshot (223).png" />
-              <p>Product Landing Page</p>
-            </section>
-            <section>
-              <img src="assets/Screenshot (227).png" />
-              <p>Kalkulator</p>
-            </section>
-            <section>
-              <img src="assets/Screenshot (224).png" />
-              <p>Formulir Pendaftaran</p>
-            </section>
-            <section>
+          </a>
+            <section class="card">
               <img src="assets/Screenshot (226).png" />
               <p>Web Organisasi</p>
             </section>
-            <section>
+            <section class="card">
               <img src="assets/Screenshot (225).png" />
-              <p>Documentation</p>
+              <p>Javascript Documentation</p>
+            </section>
+            <section class="card">
+              <img src="assets/Screenshot (224).png" />
+              <p>Formulir Pendaftaran</p>
+            </section>
+            <section class="card">
+              <img src="assets/Screenshot (223).png" />
+              <p>Product Landing Page</p>
+            </section>
+            <section class="card">
+              <img src="assets/Screenshot (227).png" />
+              <p>Kalkulator</p>
             </section>
           </div>
         </article>
-        <article>
+        <!-- Project -->
+        <article class="skills" id="skills">
           <h2>Skills</h2>
-          <div>
-            <section>
-              <figure>
-                <img src="assets/html.png" />
-                <figcaption>
-                  HTML <br />
-                  Intermediate
-                </figcaption>
-              </figure>
+          <div class="garis" style="width: 150px"></div>
+          <div class="kontainer-skills">
+            <section class="card-2">
+              <img src="assets/html.png" />
+              <p>HTML <br />Intermediate</p>
             </section>
-            <section>
-              <figure>
-                <img src="assets/css-3.png" />
-                <figcaption>
-                  CSS <br />
-                  Beginner
-                </figcaption>
-              </figure>
+            <section class="card-2">
+              <img src="assets/css-3.png" />
+              <p>CSS <br />Beginner</p>
             </section>
-            <section>
-              <figure>
-                <img src="assets/javascript-39395.png" />
-                <figcaption>
-                  Javascript <br />
-                  Beginner
-                </figcaption>
-              </figure>
+            <section class="card-2 js">
+              <img src="assets/javascript-39400.png" />
+              <p>Javascript <br />Beginner</p>
             </section>
           </div>
         </article>
-        <article>
-          <section>
-            <h2>Let's Work Together!</h2>
-            <h3>I'm looking for something</h3>
-          </section>
-          <section>
-            <h2>Contact</h2>
-            <form>
-              <label for="name">Name</label>
-              <input type="text" placeholder="Name" name="name" />
-              <label for="email">Email</label>
-              <input type="email" placeholder="Email" name="email" />
-              <label for="message">Message</label>
-              <input type="text" placeholder="Message" name="message" />
-            </form>
-          </section>
+        <!-- Contact -->
+        <article class="contact" id="contact">
+          <h2 class="contact-h2">Contact</h2>
+          <div class="garis"></div>
+          <div class="kontainer-contact">
+            <section class="contact-text">
+              <h2>Let's Work Together!</h2>
+              <h3>I'm looking for something</h3>
+              <div class="garis" id="putih"></div>
+            </section>
+            <section class="contact-form">
+              <h2>Contact</h2>
+              <form>
+                <label for="name">Name</label><br />
+                <input type="text" placeholder="Name" name="name" /><br />
+                <label for="email">Email</label><br />
+                <input type="email" placeholder="Email" name="email" /><br />
+                <label for="message">Message</label><br />
+                <input type="text" placeholder="Message" name="message" />
+              </form>
+              <button>Kirim</button>
+            </section>
+          </div>
         </article>
       </div>
     </main>
