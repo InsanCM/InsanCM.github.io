@@ -164,7 +164,7 @@ a:hover {
 }
 .card:hover {
   border: 3px solid white;
-  padding: 3%;
+  padding: 5%;
 }
 .card p {
   font-size: 120%;
